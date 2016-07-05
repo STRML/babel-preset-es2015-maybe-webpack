@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-es2015-maybe-webpack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An es2015 preset that can dynamically exclude the ES6 module plugin based on env.",
   "main": "index.js",
   "scripts": {
