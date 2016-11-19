@@ -24,9 +24,7 @@
     "url": "https://github.com/STRML/babel-plugin-es2015-maybe-webpack/issues"
   },
   "homepage": "https://github.com/STRML/babel-plugin-es2015-maybe-webpack#readme",
-  "dependencies": {
-    "modify-babel-preset": "^2.0.3"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "babel-preset-es2015": "*"
   }

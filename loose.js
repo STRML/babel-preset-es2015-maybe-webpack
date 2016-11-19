@@ -1,7 +1,6 @@
 'use strict';
+var es2015 = require('babel-preset-es2015');
+var IS_WEBPACK2 = /^2\./.test(process.env.WEBPACK_VERSION);
 
-var modify = require('modify-babel-preset');
-var LOOSE = {loose: true};
-var makeOptions = require('./makeOptions');
-
-module.exports = modify('es2015', makeOptions(LOOSE));
+var modules = IS_WEBPACK2 ? false : 'commonjs';
+module.exports = es2015.buildPreset(null, {loose: true, modules: modules});
