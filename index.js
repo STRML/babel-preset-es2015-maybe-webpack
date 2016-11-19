@@ -1,7 +1,7 @@
 'use strict';
-var makeOptions = require('./makeOptions');
-var modify = require('modify-babel-preset');
+var babelPresetEs2015 = require('babel-preset-es2015');
+var IS_WEBPACK2 = /^2\./.test(process.env.WEBPACK_VERSION);
 
-// Enables with `true` to install plugins without loose mode.
-// Call makeOptions({loose: true}) to enable loose mode. (see ./loose.js)
-module.exports = modify('es2015', makeOptions(true));
+module.exports = IS_WEBPACK2 === false
+  ? babelPresetEs2015
+  : babelPresetEs2015.buildPreset(null, {modules: false});
