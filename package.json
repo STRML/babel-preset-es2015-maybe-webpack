@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/STRML/babel-plugin-es2015-maybe-webpack.git"
+    "url": "git+ssh://git@github.com/STRML/babel-preset-es2015-maybe-webpack.git"
   },
   "keywords": [
     "babel",
@@ -21,9 +21,9 @@
   "author": "Samuel Reed <samuel.trace.reed@gmail.com> (http://strml.net/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/STRML/babel-plugin-es2015-maybe-webpack/issues"
+    "url": "https://github.com/STRML/babel-preset-es2015-maybe-webpack/issues"
   },
-  "homepage": "https://github.com/STRML/babel-plugin-es2015-maybe-webpack#readme",
+  "homepage": "https://github.com/STRML/babel-preset-es2015-maybe-webpack#readme",
   "dependencies": {},
   "peerDependencies": {
     "babel-preset-es2015": "^6.14.0"
