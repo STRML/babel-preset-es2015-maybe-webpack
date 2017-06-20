@@ -1,6 +1,6 @@
 # babel-preset-es2015-maybe-webpack
 
-Using Webpack2 with Babel is difficult. Webpack2 understands ES6 `import/export` natively, so you don't want
+Using Webpack2 with Babel is difficult. Webpack >= 2 understands ES6 `import/export` natively, so you don't want
 to use the full [babel-preset-es2015]. You want to have all of your babel options in your `.babelrc`, but there
 is no good way to override a single preset in `babel-loader` while keeping the rest of your `.babelrc` intact,
 including `env`s.
@@ -15,7 +15,7 @@ Add the following to the top of your webpack config:
 process.env.WEBPACK_VERSION = require('webpack/package.json').version;
 ```
 
-If this preset detects that Webpack 2 is being used, it will exclude `transform-es2015-modules-commonjs`.
+If this preset detects that Webpack >= 2 is being used, it will exclude `transform-es2015-modules-commonjs`.
 
 ## Install
 
